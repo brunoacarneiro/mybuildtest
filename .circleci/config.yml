@@ -42,7 +42,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
           name: Echo npmrc
-          command: echo ~/repo/.npmrc
+          command: cat ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
